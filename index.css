@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Hanken Grotesk", Arial, sans-serif;
+    color: #D9D9D9;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 30px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 4vw;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3vw;
+    grid-column: 1 / 4;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    text-align: center;
+}
+
+header h1 {
+    font-weight: 300;
+    font-size: 2rem;
+    margin: 0 0 10px 0;
+}
+
+header p {
+    font-weight: 300;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: 3 / 4;
+    grid-row: 2 / 5;
+    border-radius: 50%;
+    width: 20vw;
+    height: 20vw;
+    padding: 4vw;
+    text-align: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.message p {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.languages {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    grid-row: 2 / 5;
+    grid-column: 1 / 2;
+}
+
+.lang-container {
+    position: relative;
+}
+
+.lang {
+    border-radius: 3px;
+    padding: 4.5px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+
+.lang-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.lang-bottom {
+    position: relative;
+    z-index: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.word {
+    display: flex;
+    gap: 2px;
+    align-self: center;
+    justify-self: center;
+}
+
+.letter {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(50, 50, 50, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.touch {
+    border: 1px solid rgba(215, 215, 215, 1);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(30, 30, 30, 1);
+    font-weight: 600;
+    text-transform: uppercase;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.new-game {
+    background-color: rgba(215, 215, 215, 1);
+    width: 228px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid rgba(215, 215, 215, 1);
+    pad: 6px 12px;
+    font-size: 1.1rem;
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
+
+@media (max-width: 1024px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        
+    }
+
+    header h1 {
+    font-size: 1.5rem;
+}
+
+header p {
+    font-size: 1rem;
+}
+
+    .message {
+        width: 90%;
+        height: auto;
+        padding: 4vw;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 5%;
+    }
+
+    .languages {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .word{
+        align-self: center;
+    }
+
+    .keyboard {
+    align-self: center;
+    gap: 12px;
+}
+
+.lang{
+    width: 30px;
+    height: 30px;
+}
+
+.touch {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(30, 30, 30, 1);
+    font-weight: 600;
+    text-transform: uppercase;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+}
