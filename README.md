@@ -9,7 +9,7 @@ The goal of this project is to apply the core concepts learned during the course
 ## 🚀 Live Demo
 
 You can view the live version of the project here:  
-👉 [Netlify](https://stirring-monstera-1cb5ee.netlify.app)
+👉 [Netlify](https://public-holidays-endgame.netlify.app)
 
 ## 🛠️ Technologies Used
 
